@@ -35,6 +35,15 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
 }
 
 // Because the components are created only during the afterEvaluate phase, you must
@@ -50,7 +59,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.johnbinghamchase'
                 artifactId = 'embeddable-activity-one'
-                version = '1.0'
+                version = '2.0'
             }
             // Creates a Maven publication called “debug”.
             debug(MavenPublication) {
@@ -59,7 +68,7 @@ afterEvaluate {
 
                 groupId = 'com.github.johnbinghamchase'
                 artifactId = 'embeddable-activity-one'
-                version = '1.0'
+                version = '2.0'
             }
         }
     }
