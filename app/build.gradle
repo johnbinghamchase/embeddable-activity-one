@@ -2,12 +2,12 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 30
     buildToolsVersion "28.0.2"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -59,7 +59,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.johnbinghamchase'
                 artifactId = 'embeddable-activity-one'
-                version = '2.0'
+                version = '3.0'
             }
             // Creates a Maven publication called “debug”.
             debug(MavenPublication) {
@@ -68,7 +68,7 @@ afterEvaluate {
 
                 groupId = 'com.github.johnbinghamchase'
                 artifactId = 'embeddable-activity-one'
-                version = '2.0'
+                version = '3.0'
             }
         }
     }
